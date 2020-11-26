@@ -21,7 +21,10 @@ pipeline{
 
         stage('Build Stage')
         {
-            echo 'kxm###'
+           withMaven (maven : 'maven_3_6_3')
+           {
+                sh echo 'kxm210'
+            }
         }
 
     }
