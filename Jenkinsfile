@@ -19,7 +19,7 @@ pipeline{
             }
         }
 
-        stage('Build Stage')
+        stage('Deliver Stage')
         {
            withMaven (maven : 'maven_3_6_3')
            {
