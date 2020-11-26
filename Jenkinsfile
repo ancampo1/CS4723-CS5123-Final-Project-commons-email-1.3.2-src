@@ -21,10 +21,13 @@ pipeline{
 
         stage('Deliver Stage')
         {
-           withMaven (maven : 'maven_3_6_3')
-           {
-                sh 'script.bash'
+            steps{
+                withMaven (maven : 'maven_3_6_3')
+                {
+                    sh 'script.bash'
+                }
             }
+
         }
 
     }
