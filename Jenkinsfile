@@ -23,7 +23,7 @@ pipeline{
         {
            withMaven (maven : 'maven_3_6_3')
            {
-                sh echo 'kxm210'
+                sh 'script.bash'
             }
         }
 
