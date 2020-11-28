@@ -24,7 +24,7 @@ pipeline{
             steps{
                 withMaven (maven : 'maven_3_6_3')
                 {
-                    sh echo "kxm210"
+                    sh 'echo "kxm210" '
                 }
             }
 
