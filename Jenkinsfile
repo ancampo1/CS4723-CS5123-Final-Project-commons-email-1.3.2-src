@@ -24,7 +24,7 @@ pipeline{
             steps{
                 withMaven (maven : 'maven_3_6_3')
                 {
-                    bat './script.bash'
+                    bat ./script.bash
                 }
             }
 
