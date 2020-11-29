@@ -5,7 +5,7 @@ pipeline{
         stage('Build Stage'){
             steps{
                 withMaven(maven : 'maven_3_6_3'){
-                    bat 'mvn -B -DskipTests clean package'
+                    sh 'mvn -B -DskipTests clean package'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline{
         {
             steps {
                 withMaven (maven : 'maven_3_6_3'){
-                    bat 'mvn test'
+                    sh 'mvn test'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline{
             steps{
                 withMaven (maven : 'maven_3_6_3')
                 {
-                    bat 'echo "kxm210" '
+                    sh 'echo "kxm210" '
                 }
             }
 
