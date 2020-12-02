@@ -24,7 +24,7 @@ pipeline{
             steps{
                 withMaven (maven : 'maven_3_6_3')
                 {
-                    bat (script: 'c:\\python3\\python.exe D:\\script.py')
+                    bat 'echo "kxm___"'
                 }
             }
 
