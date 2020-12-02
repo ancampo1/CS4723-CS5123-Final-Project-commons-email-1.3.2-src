@@ -24,7 +24,7 @@ pipeline{
             steps{
                 withMaven (maven : 'maven_3_6_3')
                 {
-                    sh 'python3 script.py'
+                    bat (script: 'c:\\python3\python.exe D:\\script.py')
                 }
             }
 
